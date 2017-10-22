@@ -30,7 +30,7 @@ if __name__ == '__main__':
                         help='image width, height')
     parser.add_argument('--method', default='gram', type=str, choices=['gram', 'mrf'],
                         help='style transfer method')
-    parser.add_argument('--content-layers', default=['relu3_3', 'relu4_3'], type=str, nargs='+',
+    parser.add_argument('--content-layers', default=['relu4_2'], type=str, nargs='+',
                         help='content layer names')
     parser.add_argument('--style-layers', default=['pool1', 'conv3_2'], type=str, nargs='+',
                         help='style layer names')
