@@ -1,0 +1,9 @@
+image/*
+!image/.gitkeep
+output/*
+!output/.gitkeep
+*.pyc
+*.jpg
+*.png
+*.model
+*.caffemodel
