@@ -97,8 +97,9 @@ class NeuralStyle(object):
                 content_loss = self.content_weight * F.mean_squared_error(layer, content_layer)
                 loss_info.append(('content_' + name, float(content_loss.data)))
                 loss += content_loss
+        h = link.x
         for i, style_gram in enumerate(style_grams):
-            h = F.resize_images(link.x, (height // 2 ** i, width // 2 ** i))
+            h = F.resize_images(h, (height // 2 ** i, width // 2 ** i))
             if self.keep_color:
                 layer_names = content_layers.keys()
                 layers = self.model(util.gray(h), style_gram.keys())
