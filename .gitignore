@@ -3,7 +3,5 @@ image/*
 output/*
 !output/.gitkeep
 *.pyc
-*.jpg
-*.png
 *.model
 *.caffemodel

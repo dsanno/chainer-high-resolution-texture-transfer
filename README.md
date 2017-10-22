@@ -54,6 +54,25 @@ Experimantal options:
 * `--match-color-histogram`: (Optional) Use "Color histogram matching" algorithm in "Preserving Color in Neural Artistic Style Transfer"
 * `--luminance-only`: (Optional) Use "Luminance-only" algorithm in "Preserving Color in Neural Artistic Style Transfer"
 
+# Example
+
+## Command
+
+```
+$ python src/run.py sample/tubingen.jpg sample/block.jpg output/synthesized -g 0 -w 800
+```
+
+## Content Image
+![Content Image](/sample/stone.jpg)
+
+## Style Image
+
+![Style Image](/sample/cat.jpg)
+
+## Synthesized Image
+
+![Synthesized Image](/sample/synthesized.jpg)
+
 # License
 
 MIT License
